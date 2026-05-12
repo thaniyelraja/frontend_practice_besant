@@ -620,7 +620,24 @@ Do these things in order
 
 
 
+async/await  - Async - makes a funtion return promise 
+               Await - makes an async function wiat for promise (await which makes the asynshronous code wait until the next promise retured)
 
+
+allow us to wirte asynchrouns code in a synchronous manner 
+aynsc does not have to then or catch parameters 
+Everything after await is placed in an event queue
+
+
+JSON - Javascript object notation data-interchange format
+
+Used for exchanging data between server and web application 
+
+JSON files {key:value} or [value1, value2, value3, value4]
+
+JSON.stringify() = converts a js object to jason String
+
+JSON.parse() = converts JSON string to js Object
 
 
 

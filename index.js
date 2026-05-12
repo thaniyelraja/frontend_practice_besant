@@ -1455,13 +1455,12 @@
 
 // console.log("You have reached the end of the code");
 
-
 // try {
 
 //     const dividend = Number(window.prompt("Enter a dividend"));
 //     const divisor = Number(window.prompt("Enter a divisor"));
 
-//     if(divisor == 0) {   
+//     if(divisor == 0) {
 //         throw new Error("You cannot divide by 0");
 //     } if(isNaN(dividend) || isNaN(divisor)) {
 //         throw new Error("Values must be an number");
@@ -1471,12 +1470,10 @@
 
 // console.log(result);
 
-    
 // } catch (error) {
 //      console.error(error);
-       
-// }
 
+// }
 
 // console.log("You have reached the end");
 
@@ -1506,7 +1503,6 @@
 
 // console.log(vegetables);
 
-
 // const h4Elements = document.getElementsByTagName("h4");
 
 // for(let h4Element of h4Elements) {
@@ -1519,18 +1515,15 @@
 
 // console.log(element);
 
-
 // element.style.color = "red";
 
 // const foods = document.querySelectorAll(".veggies");
-
 
 // foods.forEach(food => {
 //     food.style.color = "red";
 // })
 
 // console.log(foods);
-
 
 const myBox = document.getElementById("myBox");
 
@@ -1558,37 +1551,30 @@ const myBox = document.getElementById("myBox");
 //    event.target.textContent = "opps";
 // })
 
-
-
-
-function task1(callback) {
-    setTimeout(() => {
-      console.log("task 1 is competed");
-      callback();
-    }, 2000)
-
-}
-function task2(callback) {
-    setTimeout(() => {
-      console.log("task 2 is competed");
-      callback()
-    }, 1000)
-}
-function task3(callback) {
-    setTimeout(() => {
-      console.log("task 3 is competed");
-      callback()
-    }, 3000)
-}
-function task4(callback) {
-  setTimeout(() => {
-      console.log("task 4 is competed");
-      callback()
-    }, 1500)
-}
-
-
-
+// function task1(callback) {
+//   setTimeout(() => {
+//     console.log("task 1 is competed");
+//     callback();
+//   }, 2000);
+// }
+// function task2(callback) {
+//   setTimeout(() => {
+//     console.log("task 2 is competed");
+//     callback();
+//   }, 1000);
+// }
+// function task3(callback) {
+//   setTimeout(() => {
+//     console.log("task 3 is competed");
+//     callback();
+//   }, 3000);
+// }
+// function task4(callback) {
+//   setTimeout(() => {
+//     console.log("task 4 is competed");
+//     callback();
+//   }, 1500);
+// }
 
 // task1();
 // task2();
@@ -1606,4 +1592,88 @@ function task4(callback) {
 //     })
 // })
 
+// 1. walk th dog  4
+// 2. Clean the house 10
+// 3. Take the trash out 2
+
+// async function walkDog() {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       const dogWalked = false;
+//       if (dogWalked) {
+//         resolve("You walk the dog");
+//       } else {
+//         reject("You didnt walk the dog");
+//       }
+//     }, 2000);
+//   });
+// }
+// function cleanTheKitchen() {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       const kitchenCleaned = true;
+//       if (kitchenCleaned) {
+//         resolve("You cleaned the  kitchen");
+//       } else {
+//         reject("You didnt clean the kitchen");
+//       }
+//     }, 3000);
+//   });
+// }
+// function takeOutTheTrash() {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       const trashTakenOut = true;
+//       if (trashTakenOut) {
+//         resolve("You take out the trash");
+//       } else {
+//         reject("You dint take the trash out");
+//       }
+//     }, 1500);
+//   });
+// }
+
+// async function dotasks() {
+ 
+//   try{
+//        const walkDogResult = await walkDog();
+//   console.log(walkDogResult);
+
+//   const cleanKitchenResult = await cleanTheKitchen();
+//   console.log(cleanKitchenResult);
+
+//   const trashOutResult = await takeOutTheTrash()
+//   console.log(trashOutResult);
+
+//   console.log("You finished all the tasks");
+//   } catch(error) {
+//      console.error(error);
+//   }
+
+// }
+
+// dotasks();
+
+// walkDog()
+//   .then((value) => {
+//     console.log(value);
+//     return cleanTheKitchen();
+//   })
+//   .then((value) => {
+//     console.log(value);
+//     return takeOutTheTrash();
+//   })
+//   .then((value) => {
+//     console.log(value);
+//     console.log("You finished all the tasks");
+//   })
+//   .catch(error => console.error(error));
+
+// walkDog(() => {
+//   cleanTheKitchen(() => {
+//     takeOutTheTrash(() => {
+//       console.log("You have finsihed all the tasks");
+//     })
+//   })
+// })
 
