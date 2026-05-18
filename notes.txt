@@ -651,11 +651,14 @@ API - HTTP MEthods - POST, GET, PUT, DELETE
 
 Bootstarp - It is frontend UI framework to design interactive designs without writing the css explicitly.
 
+Bootstrap - class 
 
 Containers - fixedwidth and fullwidth
 Typograpghy 
 colour class - text, background 
 row and coloumn classes - Container - full and fixed
+
+Padding - p-0 to p-5
 
 
 create simple blog website using bootstrap classes
